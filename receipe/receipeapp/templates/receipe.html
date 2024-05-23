@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+{%block start%}
+{%csrf_token%}
+
+<div class="container">
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">receipe name</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">receipe description</label>
+          <textarea class="="form-control></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">receipe description</label>
+            <input type="file" class="form-control">
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+
+{% endblock %}
